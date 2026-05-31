@@ -11,15 +11,15 @@ function Members() {
 
     const [members, setMembers] = useState([]);
 
+    const [showForm, setShowForm] = useState(false);
+
+    const [editingId, setEditingId] = useState(null);
+
     const handleChange = (e) => {
         setFormData({
             ...formData, [e.target.name]: e.target.value,
         });
     };
-
-    const [showForm, setShowForm] = useState(false);
-
-    const [editingId, setEditingId] = useState(null);
 
     const handleEdit = (member) => {
         setFormData({
