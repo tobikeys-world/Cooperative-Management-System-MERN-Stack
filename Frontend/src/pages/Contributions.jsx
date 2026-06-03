@@ -85,7 +85,7 @@ function Contributions() {
     return (
         <div className="flex">
             <Sidebar />
-            <div className="flex-1 p-8 bg-gray-100 min-h-screen">
+            <div className="flex-1 bg-gray-100 min-h-screen p-8">
                 <div className="flex justify-between items-center mb-6">
                     <h1 className="text-3xl font-bold">
                         Contributions</h1>
@@ -127,7 +127,7 @@ function Contributions() {
                             <th className="p-4 text-left">Member</th>
                             <th className="p-4 text-center">Amount</th>
                             <th className="p-4 text-center">Date</th>
-                            <th className="p-4 text-center">Actions</th>
+                            <th className="p-4 text-left">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
