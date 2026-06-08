@@ -93,7 +93,7 @@ npm run dev
 <img width="47%" height="1080" alt="Members' Page" src="https://github.com/user-attachments/assets/e7576e1e-b55d-4812-925a-debf01dd5009" />
 
 <img width="47%" height="1080" alt="Contribution Page" src="https://github.com/user-attachments/assets/a4d724c5-1149-4314-83bc-dbcb726181d2" /></p>
-<p align="center>
+<p align="center">
 <img width="47%" height="1080" alt="Loan Page" src="https://github.com/user-attachments/assets/78b7cf8e-350f-4225-bdff-0f158c287b72" />
 
 <img width="47%" height="1080" alt="Report Page" src="https://github.com/user-attachments/assets/8d897335-fec6-4dee-ba41-6220b8d1169b" /></p>
