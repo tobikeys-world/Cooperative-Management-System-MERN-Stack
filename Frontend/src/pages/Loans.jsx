@@ -21,7 +21,7 @@ function Loans() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("http://localhost:5000/api/loans", formData);
+            const res = await axios.post("https://cooperative-backend-9epa.onrender.com//api/loans", formData);
             setLoans([...loans, res.data]);
             setFormData({
                 memberId: "",
@@ -39,7 +39,7 @@ function Loans() {
     }, []);
     const fetchLoans = async () => {
         try {
-            const res = await axios.get("http://localhost:5000/api/loans");
+            const res = await axios.get("https://cooperative-backend-9epa.onrender.com//api/loans");
             setLoans(res.data);
         } catch (err) {
             console.log(err);
@@ -47,7 +47,7 @@ function Loans() {
     };
     const fetchMembers = async () => {
         try {
-            const res = await axios.get("http://localhost:5000/api/members");
+            const res = await axios.get("https://cooperative-backend-9epa.onrender.com//api/members");
             setMembers(res.data);
         } catch (err) {
             console.log(err);

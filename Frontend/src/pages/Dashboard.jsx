@@ -13,7 +13,7 @@ function Dashboard() {
     });
 
     useEffect(() => {
-        axios.get("http://localhost:5000/api/dashboard/summary")
+        axios.get("https://cooperative-backend-9epa.onrender.com//api/dashboard/summary")
             .then((res) => {
                 setSummary(res.data);
             })

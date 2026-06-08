@@ -25,11 +25,11 @@ function Contributions() {
         e.preventDefault();
         try {
             if (editingId) {
-                const res = await axios.put(`http://localhost:5000/api/contributions/${editingId}`, formData);
+                const res = await axios.put(`https://cooperative-backend-9epa.onrender.com//api/contributions/${editingId}`, formData);
                 setContributions(contributions.map((contribution) => contribution._id === editingId ? res.data : contribution));
                 setEditingId(null);
             } else {
-                const res = await axios.post("http://localhost:5000/api/contributions", formData);
+                const res = await axios.post("https://cooperative-backend-9epa.onrender.com//api/contributions", formData);
                 setContributions([...contributions, res.data,]);
             }
             setFormData({
@@ -55,7 +55,7 @@ function Contributions() {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`http://localhost:5000/api/contributions/${id}`);
+            await axios.delete(`https://cooperative-backend-9epa.onrender.com//api/contributions/${id}`);
             setContributions(contributions.filter((contribution) =>
                 contribution.id !== id));
         } catch (err) {
@@ -68,7 +68,7 @@ function Contributions() {
     }, []);
     const fetchContributions = async () => {
         try {
-            const res = await axios.get("http://localhost:5000/api/contributions");
+            const res = await axios.get("https://cooperative-backend-9epa.onrender.com//api/contributions");
             setContributions(res.data);
         } catch (err) {
             console.log(err);
@@ -76,7 +76,7 @@ function Contributions() {
     };
     const fetchMembers = async () => {
         try {
-            const res = await axios.get("http://localhost:5000/api/members");
+            const res = await axios.get("https://cooperative-backend-9epa.onrender.com//api/members");
             setMembers(res.data);
         } catch (err) {
             console.log(err);

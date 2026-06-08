@@ -10,7 +10,7 @@ function Reports() {
     }, []);
     const fetchReports = async () => {
         try {
-            const res = await axios.get("http://localhost:5000/api/reports/summary");
+            const res = await axios.get("https://cooperative-backend-9epa.onrender.com//api/reports/summary");
             setReports(res.data);
         } catch (err) {
             console.log(err);

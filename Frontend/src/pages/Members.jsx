@@ -36,13 +36,13 @@ function Members() {
         e.preventDefault();
         try {
             if (editingId) {
-                const res = await axios.put(`http://localhost:5000/api/members/${editingId}`, formData);
+                const res = await axios.put(`https://cooperative-backend-9epa.onrender.com//api/members/${editingId}`, formData);
                 setMembers(
                     members.map((member) => member._id === editingId ? res.data : member
                     ));
                 setEditingId(null);
             } else {
-                const res = await axios.post("http://localhost:5000/api/members", formData);
+                const res = await axios.post("https://cooperative-backend-9epa.onrender.com//api/members", formData);
                 setMembers([...members, res.data]);
             }
         } catch (err) {
@@ -52,7 +52,7 @@ function Members() {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`http://localhost:5000/api/members/${id}`);
+            await axios.delete(`https://cooperative-backend-9epa.onrender.com//api/members/${id}`);
             // remove deleted members instantly
             setMembers(members.filter((member) => member._id !== id));
         } catch (err) {
@@ -61,7 +61,7 @@ function Members() {
     };
 
     useEffect(() => {
-        axios.get("http://localhost:5000/api/members")
+        axios.get("https://cooperative-backend-9epa.onrender.com//api/members")
             .then((res) => {
                 setMembers(res.data);
             })

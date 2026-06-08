@@ -67,17 +67,6 @@ router.get("/summary", async (req, res) => {
     }
 });
 
-router.get("/members/purge-orphans", async (req, res) => {
-    try {
-        const activeMembers = await Member.find().distinct(_id);
-        const result = await Loan.deleteMany({ memberId: { $nin: activeMembers } });
-        res.json({
-            message: "Cleanup complete!",
-            deletedCount: result.deletedCount
-        });
-    } catch (err) {
-        res.status(500).json(err);
-    }
-});
+
 
 module.exports = router;
