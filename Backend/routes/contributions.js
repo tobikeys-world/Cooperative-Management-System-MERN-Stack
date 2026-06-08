@@ -39,7 +39,7 @@ router.get("/contributions/total", async (req, res) => {
         ]);
         res.json(totals);
     } catch (err) {
-        res.status.apply(500).json(err);
+        res.status(500).json(err);
     }
 });
 
@@ -60,7 +60,7 @@ router.post("/contributions", async (req, res) => {
         const saved = await newContribution.save();
         res.status(201).json(saved);
     } catch (err) {
-        res.statusCode(400).json(err);
+        res.status(400).json(err);
     }
 });
 

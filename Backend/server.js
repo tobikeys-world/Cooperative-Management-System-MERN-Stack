@@ -30,6 +30,9 @@ app.use("/api", loanRoutes);
 const dashboardRoutes = require("./routes/dashboard");
 app.use("/api", dashboardRoutes);
 
+const reportRoutes = require("./routes/report");
+app.use("/api/reports", reportRoutes);
+
 //server
 app.listen(port, () => {
     console.log(`server is running on port: ${port}`)

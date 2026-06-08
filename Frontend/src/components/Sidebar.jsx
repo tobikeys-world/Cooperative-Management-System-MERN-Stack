@@ -9,7 +9,7 @@ function Sidebar() {
                 <li className="hover:bg-blue-600 p-3 rounded-lg cursor-pointer"><Link to="/members">Members</Link></li>
                 <li className="hover:bg-blue-600 p-3 rounded-lg cursor-pointer"><Link to="/contributions"> Contributions</Link></li>
                 <li className="hover:bg-blue-600 p-3 rounded-lg cursor-pointer"><Link to="/loans"> Loans</Link></li>
-                <li className="hover:bg-blue-600 p-3 rounded-lg cursor-pointer"><Link> Reports</Link></li>
+                <li className="hover:bg-blue-600 p-3 rounded-lg cursor-pointer"><Link to="/reports/summary">Reports</Link></li>
 
             </ul>
         </div>

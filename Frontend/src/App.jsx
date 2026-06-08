@@ -3,6 +3,7 @@ import Dashboard from "./pages/Dashboard";
 import Members from "./pages/Members";
 import Contributions from "./pages/Contributions";
 import Loans from "./pages/Loans";
+import Reports from "./pages/Reports";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route path="/members" element={<Members />} />
       <Route path="/contributions" element={<Contributions />} />
       <Route path="/loans" element={<Loans />} />
+      <Route path="/reports/summary" element={<Reports />} />
     </Routes>
   );
 }

@@ -26,8 +26,8 @@ function Dashboard() {
     return (
         <div className="flex">
             <Sidebar />
-            <div className="flex-1" p-8>
-                <div className="min-h-screen bg-gray-100 p-8">
+            <div className="p-8 flex-1">
+                <div className="min-h-screen p-8 bg-gray-100">
                     <h1 className="text-3xl font-bold mb-8">Cooperative Dashboard</h1>
                     <div className="grid grid-cols-2 gap-6">
                         <div className="bg-white rounded-xl shadow-md p-6">

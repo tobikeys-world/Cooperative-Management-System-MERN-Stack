@@ -84,9 +84,9 @@ function Loans() {
                             value={formData.status}
                             onChange={handleChange}
                             className="boder p-2 mr-2 rounded">
-                            <option value="Pending">Pending</option>
-                            <option value="Active">Active</option>
-                            <option value="Paid">Paid</option>
+                            <option value="pending">Pending</option>
+                            <option value="active">Active</option>
+                            <option value="paid">Paid</option>
                         </select>
                         <button type="submit"
                             className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 cursor-pointer">

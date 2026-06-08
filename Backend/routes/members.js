@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const Member = require("../models/member.model");
+const Loan = require("../models/loan.model")
 
 //get api
 router.get("/members", async (req, res) => {
@@ -60,8 +61,10 @@ router.put("/:id", async (req, res) => {
 //delete api
 router.delete("/members/:id", async (req, res) => {
     try {
+        const memberId = req.params.id;
+        await Loan.deleteMany({ memberId: memberId });
         await
-            Member.findByIdAndDelete(req.params.id);
+            Member.findByIdAndDelete(memberId);
         res.json("Member deleted");
     } catch (err) {
         res.status(500).json(err);
