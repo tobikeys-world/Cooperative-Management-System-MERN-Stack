@@ -32,6 +32,7 @@ app.use("/api", dashboardRoutes);
 
 const reportRoutes = require("./routes/report");
 app.use("/api/reports", reportRoutes);
+
 app.get("/", (req, res) => {
     res.send("Cooperative app API is running!");
 })
