@@ -98,6 +98,11 @@ npm run dev
 
 <img width="47%" height="1080" alt="Report Page" src="https://github.com/user-attachments/assets/8d897335-fec6-4dee-ba41-6220b8d1169b" /></p>
 
+## Live Demo
+You can view the fully deployed app at:
+**[Live Application Link](https://cooperative-portfolio.onrender.com)**
+*(Note: the backend may take up to 50 - 90 seconds to come up on your first visit. I'm hosted on free Render instance)*
+
 ## Author
 
  Oluwagbohun Oluwatobi Emmanuel
